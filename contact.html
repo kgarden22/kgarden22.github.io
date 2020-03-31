@@ -40,38 +40,31 @@
       </div>
       
     </div>
-    
+    <!-- end of nav bar -->
   </nav>
-  <!-- now that the navbar is added, Im going to make the content of the home page here -->
-  <!-- we will use a container to make a box on screen with some text and an image insde the box -->
-  <!-- use a main tag here because we will need div tags inside and we do not want to have divception -->
-  <main class="container" style="margin: 70px">
-    <section class="row">
-      <div class="col-md-8">
-       
-        <article class="block">
-          <h1 class="block-header">About Kyler</h1>
-          <hr />
-          <!-- add img and CSS styling into this tag to save time -->
-          <img src="assets/imgs/natebeach.jpeg" alt="" id="about-image" style="float: left; width: 180px ;padding-right: 10px;"/>
-          <p style="margin: 10px; padding: 10px;">Aliquam accumsan eu metus at egestas. In volutpat nibh et fermentum fringilla. 
-            Vivamus rhoncus lacus non erat facilisis accumsan. Aliquam sem sem, tempus ultricies augue vitae, vestibulum eleifend tellus. 
-            Vivamus ultrices nec urna eu facilisis. Duis convallis, tortor quis convallis mattis, purus justo dictum ipsum, quis mollis tortor ligula et ex. 
-            Donec convallis augue et tincidunt ullamcorper. Proin ac purus interdum, luctus ligula ut, dictum est. Vivamus sagittis elit vel sagittis consectetur. 
-            Suspendisse quis nunc eget odio convallis pellentesque et in metus. Aliquam congue suscipit felis a lacinia. 
-            Nullam luctus congue ante vel consequat. In vehicula volutpat malesuada. Duis nec massa sagittis metus efficitur ornare. 
-            Sed non libero at justo fermentum faucibus.</p>
-        </article>
+  <!-- add form for person to add contact info and send it -->
+  <div class="col-md-8">
+    <form class="block form-horizontal">
+      <h1 class="block-header">Contact</h1>
+      <hr />
+      <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="name" placeholder="Name">
+        </div>
       </div>
-    </section>
-  </main>
-</body>
-<!-- add footer here -->
-<footer>
-    <p style="position: sticky; text-align: center;"> 
-        &copy; Copyright
-    </p>
-</footer>
-
-
-</html>
+      <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="msg">Additional Notes</label>
+        <div class="col-sm-10">
+          <textarea id="msg" class="form-control" rows="3" placeholder="Additional Notes"></textarea>
+        </div>
+      </div>
+      <button class="submit-btn">Submit</button>
+    </form>
+  </div>

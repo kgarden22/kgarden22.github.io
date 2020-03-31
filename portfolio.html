@@ -42,36 +42,37 @@
     </div>
     
   </nav>
-  <!-- now that the navbar is added, Im going to make the content of the home page here -->
-  <!-- we will use a container to make a box on screen with some text and an image insde the box -->
-  <!-- use a main tag here because we will need div tags inside and we do not want to have divception -->
-  <main class="container" style="margin: 70px">
-    <section class="row">
+  <!-- end of nav bar -->
+  <!-- now to create containers for each responsive image and then style them to fit the page accordingly -->
+  <div class="container">
+    <main class="row">
       <div class="col-md-8">
-       
         <article class="block">
-          <h1 class="block-header">About Kyler</h1>
+          <h1 class="block-header">Portfolio</h1>
           <hr />
-          <!-- add img and CSS styling into this tag to save time -->
-          <img src="assets/imgs/natebeach.jpeg" alt="" id="about-image" style="float: left; width: 180px ;padding-right: 10px;"/>
-          <p style="margin: 10px; padding: 10px;">Aliquam accumsan eu metus at egestas. In volutpat nibh et fermentum fringilla. 
-            Vivamus rhoncus lacus non erat facilisis accumsan. Aliquam sem sem, tempus ultricies augue vitae, vestibulum eleifend tellus. 
-            Vivamus ultrices nec urna eu facilisis. Duis convallis, tortor quis convallis mattis, purus justo dictum ipsum, quis mollis tortor ligula et ex. 
-            Donec convallis augue et tincidunt ullamcorper. Proin ac purus interdum, luctus ligula ut, dictum est. Vivamus sagittis elit vel sagittis consectetur. 
-            Suspendisse quis nunc eget odio convallis pellentesque et in metus. Aliquam congue suscipit felis a lacinia. 
-            Nullam luctus congue ante vel consequat. In vehicula volutpat malesuada. Duis nec massa sagittis metus efficitur ornare. 
-            Sed non libero at justo fermentum faucibus.</p>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/imgs/github.png" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/imgs/linkedin.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/imgs/stackover2.png" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="assets/imgs/stackoverflow.png" alt="">
+            </div>
+          </div>
         </article>
       </div>
-    </section>
-  </main>
-</body>
-<!-- add footer here -->
+    </main>
+  </div>
+  <!-- add footer here -->
 <footer>
     <p style="position: sticky; text-align: center;"> 
         &copy; Copyright
     </p>
 </footer>
-
-
-</html>
